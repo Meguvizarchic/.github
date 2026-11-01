@@ -27,33 +27,33 @@ Meguvizarchic 收纳了 **Meguviz** 系列项目与凝光视效引擎。每个�
 
 | 项目 | 说明 | 状态 |
 | --- | --- | --- |
-| [MeguvizRef](https://github.com/Meguvizarchic/MeguvizRef) | 反射工具库：描述符精确查询、作用域生命周期、与接收对象解耦的调用计划，核心零第三方依赖 | `1.0.0` · Central |
-| [MeguvizAndroid](https://github.com/Meguvizarchic/MeguvizAndroid) | 生命周期、窗口、资源与有界调度基础库 | `1.0.0` · GitHub |
-| [MeguvizHook](https://github.com/Meguvizarchic/MeguvizHook) | 独立 Hook SDK：自有 API 与执行核心，libxposed 101 / 102 后端互斥，安装结果逐项回执 | 开发中 |
+| [MeguvizRef](https://github.com/Meguvizarchic/MeguvizRef) | 面向 Java 17 与 Android 的反射工具库，通过描述符精确定位方法、字段与构造器，并以作用域统一管理加载器与缓存、以独立于接收对象的调用计划完成可复用的调用 | `1.0.0` · Central |
+| [MeguvizAndroid](https://github.com/Meguvizarchic/MeguvizAndroid) | 为 Android 应用提供生命周期、窗口、资源加载与有界调度能力的基础库，各模块可按需组合接入 | `1.0.0` · GitHub |
+| [MeguvizHook](https://github.com/Meguvizarchic/MeguvizHook) | 拥有自有 API 与执行核心的独立 Android Hook SDK，通过可切换的 libxposed 101 / 102 后端完成方法拦截，并为每一项安装结果提供清晰回执 | 开发中 |
 
 ### 🎨 界面与视觉
 
 | 项目 | 说明 | 状态 |
 | --- | --- | --- |
-| [MeguvizUI](https://github.com/Meguvizarchic/MeguvizUI) | 原生 View 强类型 Kotlin UI 库：编译期布局约束、属性所有权、会话生命周期 | `1.0.0` · Central |
-| [凝光视效引擎](https://github.com/Meguvizarchic/LumenCoacervationEngine) | 可移植玻璃材质与视效引擎：柔光 / 高级材质按设备自动降级，附带可选动效模块 | `1.6.1` · JitPack |
-| [MeguvizDrawable](https://github.com/Meguvizarchic/MeguvizDrawable) | Drawable 库：不可变绘制配方、形状 provider 与有界单飞缓存 `FlightCache`，可选 Compose、Android、UI 与 Lumen 桥接 | `1.0.0` · Central |
+| [MeguvizUI](https://github.com/Meguvizarchic/MeguvizUI) | 面向 Android 原生 View 的强类型 Kotlin UI 库，在编译期约束布局结构，并以属性所有权与会话生命周期管理界面状态的每一次更新 | `1.0.0` · Central |
+| [凝光视效引擎](https://github.com/Meguvizarchic/LumenCoacervationEngine) | 面向 Android View 系统的可移植玻璃材质与视效引擎，为卡片、悬浮栏、弹窗和页面提供随设备能力自动适配的柔光与高级材质以及丰富的交互动效 | `1.6.1` · JitPack |
+| [MeguvizDrawable](https://github.com/Meguvizarchic/MeguvizDrawable) | 以不可变绘制配方描述形状、颜色、渐变与描边的 Android Drawable 库，配合形状 provider 与有界单飞缓存 `FlightCache`，并可按需桥接 Compose、MeguvizAndroid、MeguvizUI 与 Lumen | `1.0.0` · Central |
 
 ### ⚙️ 原生计算与媒体
 
 | 项目 | 说明 | 状态 |
 | --- | --- | --- |
-| [MeguvizMemory](https://github.com/Meguvizarchic/MeguvizMemory) | 显式 CPU 内存域与有界 arena，读写 lease 分离，分阶段关闭 | 工程预览 |
-| [MeguvizCompute](https://github.com/Meguvizarchic/MeguvizCompute) | 基于固定版本 ncnn 的计算 SDK：版本化 C ABI、有界任务、唯一 ncnn owner | 开发 SDK |
-| [MeguvizShaderTools](https://github.com/Meguvizarchic/MeguvizShaderTools) | `mgst` 着色器工具：GLSL 编译、SPIR-V 校验与反射、不可变 shaderpack | 候选版本 |
-| [MeguvizRIFE](https://github.com/Meguvizarchic/MeguvizRIFE) | RIFE 插帧算法库，支持 v4.6 模型与纯 C 接口 | 开发 SDK |
-| [MeguvizMedia](https://github.com/Meguvizarchic/MeguvizMedia) | 帧与时间线 core、C ABI、可选 RIFE 适配与 Android JNI 库 | 开发 SDK |
+| [MeguvizMemory](https://github.com/Meguvizarchic/MeguvizMemory) | 提供显式 CPU 内存域与有界 arena 的内存管理库，以读写分离的 lease 和分阶段关闭流程保证所有权清晰与资源安全回收 | 工程预览 |
+| [MeguvizCompute](https://github.com/Meguvizarchic/MeguvizCompute) | 基于固定版本 ncnn 构建的计算 SDK，以版本化的纯 C ABI 和有界任务模型为上层算法统一提供运行时、资源与调度能力 | 开发 SDK |
+| [MeguvizShaderTools](https://github.com/Meguvizarchic/MeguvizShaderTools) | 独立的着色器主机工具 `mgst`，在锁定的工具链下完成 GLSL 编译、SPIR-V 校验与布局反射，并打包为可复现的不可变 shaderpack | 候选版本 |
+| [MeguvizRIFE](https://github.com/Meguvizarchic/MeguvizRIFE) | 基于 MeguvizCompute 的 RIFE 插帧算法库，支持 v4.6 模型并通过纯 C 接口为宿主提供帧间插值能力 | 开发 SDK |
+| [MeguvizMedia](https://github.com/Meguvizarchic/MeguvizMedia) | 集帧与时间线核心、公开 C ABI、可选 RIFE 适配与 Android JNI 库于一体的媒体处理框架，为插帧与图像处理流程提供统一的时序与资源管理 | 开发 SDK |
 
 ### 🔍 分析工具
 
 | 项目 | 说明 | 状态 |
 | --- | --- | --- |
-| [MeguvizDexDash](https://github.com/Meguvizarchic/MeguvizDexDash) | 面向桌面与云端、可嵌入且可服务化的 DEX 静态分析引擎 | 开发中 |
+| [MeguvizDexDash](https://github.com/Meguvizarchic/MeguvizDexDash) | 面向桌面与云端、可嵌入也可服务化的 DEX 静态分析引擎，为 APK 与 DEX 提供带来源身份的结构检查与分析能力 | 开发中 |
 
 ---
 
