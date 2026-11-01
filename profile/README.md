@@ -28,7 +28,7 @@ Meguvizarchic 收纳了 **Meguviz** 系列项目与凝光视效引擎。每个�
 | 项目 | 说明 | 状态 |
 | --- | --- | --- |
 | [MeguvizRef](https://github.com/Meguvizarchic/MeguvizRef) | 反射工具库：描述符精确查询、作用域生命周期、与接收对象解耦的调用计划，核心零第三方依赖 | `1.0.0` · Central |
-| [MeguvizAndroid](https://github.com/Meguvizarchic/MeguvizAndroid) | 生命周期、窗口、资源与有界调度基础库，不反向依赖 UI 或 Hook 框架 | `1.0.0` · GitHub |
+| [MeguvizAndroid](https://github.com/Meguvizarchic/MeguvizAndroid) | 生命周期、窗口、资源与有界调度基础库 | `1.0.0` · GitHub |
 | [MeguvizHook](https://github.com/Meguvizarchic/MeguvizHook) | 独立 Hook SDK：自有 API 与执行核心，libxposed 101 / 102 后端互斥，安装结果逐项回执 | 开发中 |
 
 ### 🎨 界面与视觉
@@ -46,14 +46,14 @@ Meguvizarchic 收纳了 **Meguviz** 系列项目与凝光视效引擎。每个�
 | [MeguvizMemory](https://github.com/Meguvizarchic/MeguvizMemory) | 显式 CPU 内存域与有界 arena，读写 lease 分离，分阶段关闭 | 工程预览 |
 | [MeguvizCompute](https://github.com/Meguvizarchic/MeguvizCompute) | 基于固定版本 ncnn 的计算 SDK：版本化 C ABI、有界任务、唯一 ncnn owner | 开发 SDK |
 | [MeguvizShaderTools](https://github.com/Meguvizarchic/MeguvizShaderTools) | `mgst` 着色器工具：GLSL 编译、SPIR-V 校验与反射、不可变 shaderpack | 候选版本 |
-| [MeguvizRIFE](https://github.com/Meguvizarchic/MeguvizRIFE) | RIFE 插帧算法库，当前提供 v4.6 CPU FP32 reference，模型外置 | 开发 SDK |
+| [MeguvizRIFE](https://github.com/Meguvizarchic/MeguvizRIFE) | RIFE 插帧算法库，支持 v4.6 模型与纯 C 接口 | 开发 SDK |
 | [MeguvizMedia](https://github.com/Meguvizarchic/MeguvizMedia) | 帧与时间线 core、C ABI、可选 RIFE 适配与 Android JNI 库 | 开发 SDK |
 
 ### 🔍 分析工具
 
 | 项目 | 说明 | 状态 |
 | --- | --- | --- |
-| [MeguvizDexDash](https://github.com/Meguvizarchic/MeguvizDexDash) | 面向桌面与云端的 DEX 静态分析引擎，未支持的格式明确拒绝 | 开发中 |
+| [MeguvizDexDash](https://github.com/Meguvizarchic/MeguvizDexDash) | 面向桌面与云端、可嵌入且可服务化的 DEX 静态分析引擎 | 开发中 |
 
 ---
 
